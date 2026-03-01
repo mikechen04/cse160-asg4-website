@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- simple grass texture -->
+  <rect width="256" height="256" fill="#3fa34d"/>
+  <g stroke="#2c7a38" stroke-width="4" stroke-linecap="round" opacity="0.85">
+    <!-- random-ish blades -->
+    <path d="M10 250 L30 200" />
+    <path d="M30 256 L55 210" />
+    <path d="M60 256 L70 210" />
+    <path d="M85 256 L100 215" />
+    <path d="M110 256 L120 205" />
+    <path d="M130 256 L150 210" />
+    <path d="M160 256 L165 205" />
+    <path d="M185 256 L200 215" />
+    <path d="M210 256 L235 205" />
+    <path d="M235 256 L250 215" />
+
+    <path d="M15 180 L35 140" />
+    <path d="M55 185 L70 145" />
+    <path d="M95 190 L110 150" />
+    <path d="M135 185 L150 145" />
+    <path d="M175 190 L190 150" />
+    <path d="M215 185 L235 145" />
+  </g>
+  <g fill="#2c7a38" opacity="0.25">
+    <circle cx="40" cy="60" r="22"/>
+    <circle cx="120" cy="90" r="28"/>
+    <circle cx="210" cy="70" r="24"/>
+    <circle cx="70" cy="140" r="20"/>
+    <circle cx="180" cy="150" r="26"/>
+  </g>
+</svg>
+

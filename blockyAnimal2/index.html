@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CSE160 A4 - Phong Lighting</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #181818;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+      gap: 10px;
+    }
+    canvas {
+      border: 1px solid #444;
+      background: #000;
+    }
+    .row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .panel {
+      background: #222;
+      border: 1px solid #3a3a3a;
+      padding: 8px;
+      border-radius: 8px;
+      width: 740px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 5px 8px;
+      cursor: pointer;
+    }
+    input[type="range"] {
+      width: 130px;
+    }
+    #numdot {
+      margin: 0;
+      font-size: 14px;
+      color: #cfcfcf;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="webgl" width="740" height="500">
+    your browser does not support canvas
+  </canvas>
+
+  <p id="numdot">starting...</p>
+
+  <div class="panel">
+    <div class="row">
+      <button id="lightingToggleBtn">lighting: on</button>
+      <button id="normalToggleBtn">normals: off</button>
+      <button id="pointToggleBtn">point light: on</button>
+      <button id="spotToggleBtn">spot light: on</button>
+      <button id="nightToggleBtn">night: off</button>
+      <label><input id="spinLightCheck" type="checkbox" checked /> spin point light</label>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="row">
+      <label>light x</label>
+      <input id="lightX" type="range" min="-4" max="4" value="2" step="0.01" />
+      <span id="lightXVal">2</span>
+
+      <label>light y</label>
+      <input id="lightY" type="range" min="0" max="6" value="2.2" step="0.01" />
+      <span id="lightYVal">2.2</span>
+
+      <label>light z</label>
+      <input id="lightZ" type="range" min="-4" max="4" value="2" step="0.01" />
+      <span id="lightZVal">2</span>
+    </div>
+    <div class="row" style="margin-top:8px;">
+      <label>light r</label>
+      <input id="lightR" type="range" min="0" max="1" value="1" step="0.01" />
+      <span id="lightRVal">1</span>
+
+      <label>light g</label>
+      <input id="lightG" type="range" min="0" max="1" value="1" step="0.01" />
+      <span id="lightGVal">1</span>
+
+      <label>light b</label>
+      <input id="lightB" type="range" min="0" max="1" value="1" step="0.01" />
+      <span id="lightBVal">1</span>
+    </div>
+    <div class="row" style="margin-top:8px;">
+      <label>light spin speed</label>
+      <input id="lightSpinSpeed" type="range" min="0" max="3" value="0.8" step="0.05" />
+      <span id="lightSpinSpeedVal">0.8</span>
+
+      <label>spot speed</label>
+      <input id="spotSpeed" type="range" min="0" max="3" value="0" step="0.05" />
+      <span id="spotSpeedVal">0</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="row">
+      controls: <b>w/a/s/d</b> move camera, <b>q/e</b> turn camera
+    </div>
+  </div>
+
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix.js"></script>
+
+  <script src="camera.js"></script>
+  <script src="Cube.js"></script>
+  <script src="Sphere.js"></script>
+  <script src="OBJModel.js"></script>
+  <script src="BlockyAnimal.js"></script>
+  <script>main();</script>
+</body>
+</html>

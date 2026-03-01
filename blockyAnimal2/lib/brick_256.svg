@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- simple brick texture (power of 2, square). written as svg so it loads from filesystem -->
+  <rect width="256" height="256" fill="#8b3f2e"/>
+  <!-- mortar lines -->
+  <g fill="#6d2f22">
+    <!-- horizontal lines -->
+    <rect x="0" y="30" width="256" height="6"/>
+    <rect x="0" y="70" width="256" height="6"/>
+    <rect x="0" y="110" width="256" height="6"/>
+    <rect x="0" y="150" width="256" height="6"/>
+    <rect x="0" y="190" width="256" height="6"/>
+    <rect x="0" y="230" width="256" height="6"/>
+    <!-- vertical staggered lines -->
+    <rect x="40" y="0" width="6" height="30"/>
+    <rect x="120" y="0" width="6" height="30"/>
+    <rect x="200" y="0" width="6" height="30"/>
+
+    <rect x="0" y="36" width="6" height="34"/>
+    <rect x="80" y="36" width="6" height="34"/>
+    <rect x="160" y="36" width="6" height="34"/>
+    <rect x="240" y="36" width="6" height="34"/>
+
+    <rect x="40" y="76" width="6" height="34"/>
+    <rect x="120" y="76" width="6" height="34"/>
+    <rect x="200" y="76" width="6" height="34"/>
+
+    <rect x="0" y="116" width="6" height="34"/>
+    <rect x="80" y="116" width="6" height="34"/>
+    <rect x="160" y="116" width="6" height="34"/>
+    <rect x="240" y="116" width="6" height="34"/>
+
+    <rect x="40" y="156" width="6" height="34"/>
+    <rect x="120" y="156" width="6" height="34"/>
+    <rect x="200" y="156" width="6" height="34"/>
+
+    <rect x="0" y="196" width="6" height="34"/>
+    <rect x="80" y="196" width="6" height="34"/>
+    <rect x="160" y="196" width="6" height="34"/>
+    <rect x="240" y="196" width="6" height="34"/>
+  </g>
+</svg>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 256x256, power of 2, square. simple sky-ish gradient + some clouds -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6ec6ff"/>
+      <stop offset="100%" stop-color="#1e66ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="256" height="256" fill="url(#g)"/>
+  <!-- some simple "cloud blobs" -->
+  <g fill="rgba(255,255,255,0.8)">
+    <circle cx="60" cy="60" r="18"/>
+    <circle cx="80" cy="55" r="22"/>
+    <circle cx="102" cy="62" r="16"/>
+    <rect x="55" y="60" width="70" height="20" rx="10" ry="10"/>
+
+    <circle cx="170" cy="120" r="14"/>
+    <circle cx="190" cy="115" r="20"/>
+    <circle cx="210" cy="122" r="14"/>
+    <rect x="165" y="120" width="60" height="18" rx="9" ry="9"/>
+  </g>
+</svg>
+
